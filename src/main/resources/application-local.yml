@@ -1,0 +1,216 @@
+spring:
+  #============== springboot2.6兼容Swagger ===================
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+  #============== 设置上传文件大小 ===================
+  servlet:
+    multipart:
+      max-file-size: 300MB
+      max-request-size: 500MB
+  #============== mysql ===================
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 522711
+#    password: hello2023
+    url: jdbc:mysql://127.0.0.1:3306/lottery?serverTimezone=UTC&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false&allowPublicKeyRetrieval=true&zeroDateTimeBehavior=convertToNull
+    hikari:
+      auto-commit: true
+      connection-test-query: SELECT 1
+      connection-timeout: 60000
+      idle-timeout: 500000
+      max-lifetime: 540000
+      maximum-pool-size: 30
+      minimum-idle: 10
+    type: com.zaxxer.hikari.HikariDataSource
+
+  #============== redisson ===================
+  redis:
+    redisson:
+      config: |
+        singleServerConfig:
+          # 连接空闲超时，单位：毫秒
+          idleConnectionTimeout: 10000
+          # 连接超时，单位：毫秒
+          connectTimeout: 10000
+          # 命令等待超时，单位：毫秒
+          timeout: 3000
+          # 命令失败重试次数,如果尝试达到 retryAttempts（命令失败重试次数） 仍然不能将命令发送至某个指定的节点时，将抛出错误。
+          # 如果尝试在此限制之内发送成功，则开始启用 timeout（命令等待超时） 计时。
+          retryAttempts: 3
+          # 命令重试发送时间间隔，单位：毫秒
+          retryInterval: 1500
+          # 密码
+          password: admin
+          # 单个连接最大订阅数量
+          subscriptionsPerConnection: 5
+          # 客户端名称
+          #clientName: axin
+          #  # 节点地址
+          address: redis://154.38.118.182:6379
+          # 发布和订阅连接的最小空闲连接数
+          subscriptionConnectionMinimumIdleSize: 1
+          # 发布和订阅连接池大小
+          subscriptionConnectionPoolSize: 50
+          # 最小空闲连接数
+          connectionMinimumIdleSize: 32
+          # 连接池大小
+          connectionPoolSize: 64
+          # 数据库编号
+          database: 0
+          # DNS监测时间间隔，单位：毫秒
+          dnsMonitoringInterval: 5000
+          pingConnectionInterval: 1000
+        # 线程池数量,默认值: 当前处理核数量 * 2
+        #threads: 0
+        # Netty线程池数量,默认值: 当前处理核数量 * 2
+        #nettyThreads: 0
+        # 编码
+        codec: !<org.redisson.codec.JsonJacksonCodec> {}
+        # 传输模式
+        transportMode : "NIO"
+
+
+  #============== rabbitmq 连接配置 ===================
+  rabbitmq:
+    host: 47.243.253.108
+    port: 15672
+    username: admin
+    password: aaaaaa
+    #确认消息已发送到交换机(Exchange)
+    publisher-confirm-type: correlated
+    #保证交换机能把消息推送到队列中
+    publisher-returns: true
+    # 虚拟主机
+    virtual-host: /
+    #这个配置是保证消费者会消费消息，手动确认
+    listener:
+      simple:
+        acknowledge-mode: manual
+    template:
+      mandatory: true
+
+  mail:
+    host: smtp.163.com
+    username: bieshujihua@163.com
+    password: YPFICCEHKWARBYYL
+    default-encoding: utf-8
+
+#============== mybatis-plus ===================
+mybatis-plus:
+  #实体类扫描地址
+  type-aliases-package: com.qihang.domain.*
+  # xml扫描，多个目录用逗号或者分号分隔（告诉 Mapper 所对应的 XML 文件位置）
+  mapper-locations: classpath:/mapper/*Mapper.xml
+  # 以下配置均有默认值,可以不设置
+  global-config:
+    db-config:
+      #主键类型 AUTO:"数据库ID自增" INPUT:"用户输入ID",ID_WORKER:"全局唯一ID (数字类型唯一ID)", UUID:"全局唯一ID UUID";
+      id-type: auto
+      #字段策略 IGNORED:"忽略判断"  NOT_NULL:"非 NULL 判断")  NOT_EMPTY:"非空判断"
+      field-strategy: NOT_EMPTY
+      #数据库类型
+      db-type: MYSQL
+  configuration:
+    # 是否开启自动驼峰命名规则映射:从数据库列名到Java属性驼峰命名的类似映射
+    map-underscore-to-camel-case: true
+    # 如果查询结果中包含空值的列，则 MyBatis 在映射的时候，不会映射这个字段
+    call-setters-on-nulls: true
+    # 这个配置会将执行的sql打印出来，在开发或测试的时候可以用
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+#============== 配置Security需要忽略的路径 ===================
+exclude:
+  path:
+    - /app/user/login
+    - /app/user/change/pwd
+    - /app/user/get/tenant/*
+    - /app/user/refresh
+    - /app/user/send
+    - /app/user/register
+    - /app/user/phone/exist
+    - /swagger-ui/**
+    - /swagger-resources/**
+    - /v3/api-docs
+    - /app/pay/order/callback
+    - /sys/user/login
+    - /app/shop/list
+    - /sys/user/token/*
+    - /app/domain/query
+
+#============== S3对象存储 ===================
+s3:
+  # s3上已经存在该存储桶
+  file_bucket: cms
+  # AWS 访问密钥
+  access_key: AKIA5PP2NKZNC4NFQ7XV
+  # AWS SECRET_KEY
+  secret_key: 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
+  # AWS 云平台地址
+  url: https://qihang2023.s3.amazonaws.com/
+
+#============== 腾讯云相关配置 ===================
+
+tencent:
+  #  短信
+  sms:
+    secret_id: AKIDNcdQ0NXUDgutiKsJXJ0UoulPuFVaeWEk
+    secret_key: Nispa8VcU8gBWeYHmDQN4ZpZ9WeW9Wp0
+    app_id: 1400750368
+    end_point: sms.tencentcloudapi.com
+    region: ap-guangzhou
+    template_id: 1581748
+    sign_name: 小九最稳预测公众号
+
+#chromedriver 驱动路径
+webdriver:
+  chrome:
+    driver:
+#      path: /home/fedor/ticai/geckodriver
+      path: /usr/bin/chromedriver
+
+
+#支付宝支付配置
+alipay:
+  #app_id: 2021003157618556
+  #alipay_public_key: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlUtswOdGqEyCgnVWaUX7iLV9JHMLOyfAj3m2r6ze//nYQV7jKyRyQIVuVBZEQzM9Tp4YU/BD4fU4YMwN/hajvRyGblZHh16SVrvqBYGkSH2aCfsYIi/jQHF9KGNcns59TBwbGK3xOowsbnEchaNsuYz7dwnPTD9YYxB/DKp/CqcPdwNAPmYc23jR4BX5IiLfunNJoOcOduvCbIBU0/so5lMunzI9r6J9Id1yr+ZiPwSS74FgjeY4Y49Ydmu8lKNXk/NzOrQbea99AiinsPRdFQ92EoFtnBxDHs8RcumsWLYXVgQYBNPUyuMm63DynryhovZGHKPJxhlAcqjcqzd2JQIDAQAB
+  #rsa_private_key: MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCyXlNX++78SMmi30FKuQgLQ4mrJQb9nk/CEqz2Og465Y8Av0YfHRuHszuGLWKCPqL6RJiyeMBU2t91VwUnGpswNsRy5ON0YP+V7Fx2d8C0PoLbGjJVCrgUL3iQwW8mqE8hImp0V+6nqh7xKtVoU+sIPDgioYen882lyBNjQfSgFP421YeoD3AUWIJUo0y2rTemMV0cxMYOIgRcJjC1i6kdkZdeO1mrs3yZAROMutP8vYfLF3lxOeFDv6u+WpVXzkezm5AaTe+pvXpK2+dU3IyhVsUNIDlQvec1NjS+f/O4Ms5m+6BWu1Rt1wSSywJzZFVDgN/MDr2Ws9/fX8g4zmpRAgMBAAECggEATPOo3UKRnkIAy8Wps4UUVVez4yQ8Wdqc6kuIV0pArWQwR9A9flreb7MBsSePYkWHppVFk2nJAFLVKRh73pz56tkV88OP5bubSKEKWwnbF2gIqGIq6MmRFRRN3ZW2UGU4jkD80GjHS4p3gvBJ1ZKuyYTBax9pGSpzxFwHEUF5Oj5bX/m+gDiXIHn02HJG9TNry+aKonptgVhysI8AOmqoOdcEj+mg4zrtK7JLlN3OzymnI5XCigBaiTO7mYCYA19cKVt7SgnInh6WrS2/XXjxV7cGnesVUnqmosgVVdBPChY9S/9AOR6+30ZDLV83BaUAa0jF8hpMX7XfC4lGhK2v4QKBgQDnWMs7tm6rQc6fF+fZYzWT53s1kP0/Cr7b0nNU2pINoB1H9dznFo1kIUY3tGvMlT9KQowvDJ9zQKtmzEFwIli0kVNBDx2TqcXWsw0UFEQxjb3tQEeEINF+pHz50fcPiJR6zsu4H83Tz4IAgsrTBVcB0BtDL3s9nig7fVStLeEYXQKBgQDFYEQ4seBMpQpNHTH1PcB2iL7ATNe8Er5oJNrtAmhH4OnCIoEsJp28IHOlAHqZ1sip4ixPcono78XoEvaiicKTiz4bmg4qIUIKKWWATebwdz6tfXrJKjOQlxv+MF9Xu5qQx+8vbpWj1t/sEnEbOyq7zrm285p8RtOLTt0SxHuqhQKBgQCEVj3DhaMe4gEA7trYdrDiT2sihDLpigsNkgAZTQJ5OtslG9ZmdnchDQuut81mdQWERDcOfukDM74YisTwESWu/Oaj87KWkmoyW7AiiUlNE2jOu5NtWJyeFhfLjDkIsLdG3N6aD89c13nlMuw08/wGdHXz48hawgr/pLz4Z6M4nQKBgQCXbUvp004qf1Rv5T420LGgPzlZf5rkB91dOSldPMOUodG1x5MitF2/v4X5yWxGKqq463TjXxS/SXWknyfpe5d0axezRXYojGuGMExXK21Kf7HumJ5jR6VYARbQ5XvAa4YiHcI7ubPEh040Z9Gu+q3GeMuyuSKExjH2ZwLlKylVoQKBgQCJvPmB5iLlbu9W0JCp3hWB4E9cTvYo9KQRUpPUh+NqYCdkcmB1y3YuuOw4n8W1GvdKjidZqCbZhVOVg/zZyKn4CR5qtJHblGzkB7b47bPseREmTOleojMA2c0zOhw9lVwARvtjUMVxzvXsjLb3zoEtMn3JrSYG6huhnMAMPsLOUw==
+  api_gateway: https://openapi.alipay.com/gateway.do
+  notify_url: http://app.tianyingty.xyz:48080/app/pay/order/callback
+  return_url: http://ticai.store/order/success
+  charset: utf-8
+  format: json
+  sign_type: RSA2
+
+#多租户
+mro:
+  tenant:
+    #数据库的多租户字段
+    column: tenant_id
+    #过滤的表名 不需要拼接tenant_id
+    tables:
+      - t_basketball_match
+      - t_documentary
+      - t_documentary_user
+      - t_beidan_match
+      - t_football_match
+      - t_win_burden_match
+      - t_permutation_award
+      - t_shop
+      - t_sys_domain
+      - t_omit
+  spring:
+    mvc:
+      cors:
+        enabled: false
+
+  #
+  # /*源码开发
+  #* @author qihang
+  #* Email：evi2009kt@gmail.com
+  # * 飞机Telegram：qihang9981
+  # */
+#

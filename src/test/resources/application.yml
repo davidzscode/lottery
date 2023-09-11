@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: local
+server:
+#  port: 48080
+  port: 8080
+
+
+
+#
+ # /*源码开发
+  #* @author qihang
+  #* Email：evi2009kt@gmail.com
+ # * 飞机Telegram：qihang9981
+ # */
+#

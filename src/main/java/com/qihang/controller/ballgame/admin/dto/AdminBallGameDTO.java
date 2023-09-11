@@ -1,0 +1,26 @@
+package com.qihang.controller.ballgame.admin.dto;
+
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
+
+import javax.validation.constraints.NotNull;
+
+/**
+ * @author lihv
+ * @since 2023/8/7
+ */
+@Data
+public class AdminBallGameDTO {
+    private static final long serialVersionUID = 1L;
+    
+    @ApiModelProperty(value = "id")
+    @NotNull(message = "不能为空")
+    private Integer id;
+    
+    @ApiModelProperty(value = "0/1  上架/下架")
+    @NotNull(message = "不能为空")
+    private String line;
+    
+    @NotNull(message = "不能为空")
+    private Integer tenantId;
+}
