@@ -7,3 +7,4 @@ wxcomponents/**/*.vue
 wxcomponents/**/*.css
 .hbuilderx/
 uniCloud/
+uniCloud-aliyun/
