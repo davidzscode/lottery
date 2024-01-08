@@ -1,0 +1,76 @@
+//本页面由uniapp切片工具生成，app切片-可视化设计工具(一套代码编译到7个平台iOS、Android、H5、小程序)，软件下载地址：http://www.ymznkf.com/new_view_669.htm
+html,body,#app {height: 100%;width: 100%;}
+.YmContent {height: 100%;width: 100%}
+page-body,#app {height: 100%;}
+button::after {border: none;width: auto;}
+input{outline: none;border: none;list-style: none;width: auto;}
+.list_item{float: left;}
+.ym_hide{display: none;}
+.ym_show{display: block;}
+.slide-image {  width: 100%;  height:100%;}
+.list_horizontal {width: auto; display:inline-block; }
+ .my_1{margin-top: 0px;white-space:normal;width:100%;padding:0upx;clear:both;float:left;background: linear-gradient(to bottom, #9A3B86, #b480be); border-radius:0upx;font-size:8upx;}
+ .my_1 .my_3{white-space:normal;width:100%;height:129upx;padding:0upx;clear:both;margin-top:0upx;margin-left:13upx;float:left; border-radius:0upx;font-size:8upx;}
+ .my_1 .my_3 .my_4{white-space:normal;width:117upx;height:117upx;padding:0upx;margin-top:4upx;margin-left:10upx;float:left; border-radius:0upx;font-size:8upx; line-height:117upx;}
+ .my_1 .my_3 .my_5{white-space:normal;width:493upx;height:87upx;padding:0upx;margin-top:27upx;margin-left:30upx;float:left; border-radius:0upx;font-size:8upx;}
+ .my_1 .my_3 .my_5 .my_7{white-space:normal;width:431upx;height:42upx;padding:0upx;clear:both;margin-top:0upx;margin-left:0upx;float:left; border-radius:0upx; color:#ffffff;font-size:32upx; line-height:42upx;}
+ .my_1 .my_3 .my_5 .my_8{white-space:normal;width:431upx;height:29upx;padding:0upx;clear:both;margin-top:0upx;margin-left:0upx;float:left; border-radius:0upx; color:#fbafa9;font-size:22upx; line-height:29upx;}
+ .my_1 .my_3 .my_6{white-space:normal;width:31upx;height:43upx;padding:0upx;margin-top:40upx;margin-left:17upx;float:left; border-radius:0upx;font-size:42upx; line-height:43upx;}
+ .my_1 .my_2{white-space:normal;width:100%;height:100px;padding:0upx;clear:both;margin-top:10%;margin-bottom:0upx;margin-left:0upx;float:left;background-color:#ffffff; border-radius:0upx; border-top-left-radius:0upx; border-top-right-radius:0upx;font-size:8upx;}
+ .my_1 .my_2 .my_9{white-space:normal;width:100%;height:172upx;padding:0upx;clear:both;margin-top:29upx;margin-left:23upx;float:left;background-color:#ffffff; border-radius:0upx;font-size:8upx;}
+ .my_1 .my_2 .my_9 .my_10{white-space:normal;width:278upx;height:149upx;padding:0upx;margin-top:15upx;margin-left:38upx;float:left; border-radius:0upx;font-size:8upx;}
+ .my_1 .my_2 .my_9 .my_10 .my_13{white-space:normal;width:171upx;height:40upx;padding:0upx;clear:both;margin-top:6upx;margin-left:50upx;float:left;text-align:center;justify-content:center; border-radius:0upx; color:#646464;font-size:27upx; line-height:40upx;}
+ .my_1 .my_2 .my_9 .my_10 .my_14{white-space:normal;width:171upx;height:36upx;padding:0upx;clear:both;margin-top:7upx;margin-left:50upx;float:left;text-align:center;justify-content:center; border-radius:0upx; color:#646464;font-size:18upx; line-height:36upx;}
+ .my_1 .my_2 .my_9 .my_10 .my_15{white-space:normal;width:211upx;height:37upx;padding:0upx;clear:both;margin-top:6upx;margin-left:38upx;float:left; border-radius:0upx;font-size:39upx; line-height:37upx;}
+ .my_1 .my_2 .my_9 .my_10 .my_15 .my_16{white-space:normal;width:74upx;height:37upx;padding:0upx;margin-top:0upx;margin-left:11upx;float:left; border-radius:0upx;font-size:36upx; line-height:37upx;}
+ .my_1 .my_2 .my_9 .my_10 .my_15 .my_17{white-space:normal;width:74upx;height:37upx;padding:0upx;margin-top:0upx;margin-left:21upx;float:left; border-radius:0upx;font-size:36upx; line-height:37upx;}
+ .my_1 .my_2 .my_9 .my_11{white-space:normal;width:3upx;height:79upx;padding:0upx;margin-top:47upx;margin-left:32upx;float:left;background-color:#f1f5f1; border-radius:0upx;font-size:8upx;}
+ .my_1 .my_2 .my_9 .my_12{white-space:normal;width:289upx;height:149upx;padding:0upx;margin-top:15upx;margin-left:40upx;float:left; border-radius:0upx;font-size:8upx;}
+ .my_1 .my_2 .my_9 .my_12 .my_18{white-space:normal;width:171upx;height:40upx;padding:0upx;clear:both;margin-top:6upx;margin-left:47upx;float:left;text-align:center;justify-content:center; border-radius:0upx; color:#646464;font-size:27upx; line-height:40upx;}
+ .my_1 .my_2 .my_9 .my_12 .my_19{white-space:normal;width:171upx;height:36upx;padding:0upx;clear:both;margin-top:7upx;margin-left:47upx;float:left;text-align:center;justify-content:center; border-radius:0upx; color:#646464;font-size:17upx; line-height:36upx;}
+ .my_1 .my_2 .my_9 .my_12 .my_20{white-space:normal;width:211upx;height:37upx;padding:0upx;clear:both;margin-top:6upx;margin-left:35upx;float:left; border-radius:0upx;font-size:39upx; line-height:37upx;}
+ .my_1 .my_2 .my_9 .my_12 .my_20 .my_21{white-space:normal;width:74upx;height:37upx;padding:0upx;margin-top:0upx;margin-left:12upx;float:left; border-radius:0upx;font-size:36upx; line-height:37upx;}
+ .my_1 .my_2 .my_9 .my_12 .my_20 .my_22{white-space:normal;width:74upx;height:37upx;padding:0upx;margin-top:0upx;margin-left:20upx;float:left; border-radius:0upx;font-size:36upx; line-height:37upx;}
+ .my_1 .my_2 .my_23{white-space:normal;width:702upx;height:174upx;padding:0upx;clear:both;margin-top:24upx;margin-left:23upx;float:left;background-color:#ffffff; border-radius:0upx;font-size:8upx;}
+ .my_1 .my_2 .my_23 .my_24{white-space:normal;width:154upx;height:140upx;padding:0upx;margin-top:17upx;margin-left:14upx;float:left; border-radius:0upx;font-size:8upx;}
+ .my_1 .my_2 .my_23 .my_24 .my_25{white-space:normal;width:79upx;height:78upx;padding:0upx;clear:both;margin-top:5upx;margin-left:32upx;float:left; border-radius:0upx;font-size:8upx; line-height:78upx;}
+ .my_1 .my_2 .my_23 .my_24 .my_26{white-space:normal;width:130upx;height:35upx;padding:0upx;clear:both;margin-top:13upx;margin-left:7upx;float:left;text-align:center;justify-content:center; border-radius:0upx; color:#646464;font-size:29upx; line-height:35upx;}
+ .my_1 .my_2 .my_23 .my_27{white-space:normal;width:154upx;height:140upx;padding:0upx;margin-top:17upx;margin-left:20upx;float:left; border-radius:0upx;font-size:8upx;}
+ .my_1 .my_2 .my_23 .my_27 .my_28{white-space:normal;width:79upx;height:78upx;padding:0upx;clear:both;margin-top:5upx;margin-left:32upx;float:left; border-radius:0upx;font-size:8upx; line-height:78upx;}
+ .my_1 .my_2 .my_23 .my_27 .my_29{white-space:normal;width:130upx;height:35upx;padding:0upx;clear:both;margin-top:13upx;margin-left:7upx;float:left;text-align:center;justify-content:center; border-radius:0upx; color:#646464;font-size:29upx; line-height:35upx;}
+ .my_1 .my_2 .my_23 .my_30{white-space:normal;width:154upx;height:140upx;padding:0upx;margin-top:17upx;margin-left:22upx;float:left; border-radius:0upx;font-size:8upx;}
+ .my_1 .my_2 .my_23 .my_30 .my_31{white-space:normal;width:79upx;height:78upx;padding:0upx;clear:both;margin-top:5upx;margin-left:32upx;float:left; border-radius:0upx;font-size:8upx; line-height:78upx;}
+ .my_1 .my_2 .my_23 .my_30 .my_32{white-space:normal;width:130upx;height:35upx;padding:0upx;clear:both;margin-top:13upx;margin-left:7upx;float:left;text-align:center;justify-content:center; border-radius:0upx; color:#646464;font-size:29upx; line-height:35upx;}
+ .my_1 .my_2 .my_23 .my_33{white-space:normal;width:154upx;height:140upx;padding:0upx;margin-top:17upx;margin-left:20upx;float:left; border-radius:0upx;font-size:8upx;}
+ .my_1 .my_2 .my_23 .my_33 .my_34{white-space:normal;width:79upx;height:78upx;padding:0upx;clear:both;margin-top:5upx;margin-left:32upx;float:left; border-radius:0upx;font-size:8upx; line-height:78upx;}
+ .my_1 .my_2 .my_23 .my_33 .my_35{white-space:normal;width:130upx;height:35upx;padding:0upx;clear:both;margin-top:13upx;margin-left:7upx;float:left;text-align:center;justify-content:center; border-radius:0upx; color:#646464;font-size:29upx; line-height:35upx;}
+ .my_1 .my_2 .my_36{white-space:normal;width:702upx;height:384upx;padding:0upx;clear:both;margin-top:24upx;margin-left:23upx;float:left;background-color:#ffffff; border-radius:0upx;font-size:8upx;}
+ .my_1 .my_2 .my_36 .my_37{white-space:normal;width:651upx;height:95upx;padding:0upx;clear:both;margin-top:43upx;margin-left:38upx;float:left; border-bottom-color:#e1e1e1; border-bottom-width:1upx; border-bottom-style:solid; border-radius:0upx;font-size:8upx;}
+ .my_1 .my_2 .my_36 .my_37 .my_38{white-space:normal;width:47upx;height:45upx;padding:0upx;margin-top:13upx;margin-left:2upx;float:left; border-radius:0upx;font-size:44upx; line-height:45upx;}
+ .my_1 .my_2 .my_36 .my_37 .my_39{white-space:normal;width:426upx;height:47upx;padding:0upx;margin-top:13upx;margin-left:18upx;float:left; border-radius:0upx; color:#646464;font-size:32upx; line-height:47upx;}
+ .my_1 .my_2 .my_36 .my_37 .my_40{white-space:normal;width:30upx;height:32upx;padding:0upx;margin-top:20upx;margin-left:113upx;float:left; border-radius:0upx;font-size:31upx; line-height:32upx;}
+ .my_1 .my_2 .my_36 .my_41{white-space:normal;width:651upx;height:95upx;padding:0upx;clear:both;margin-top:22upx;margin-left:38upx;float:left; border-bottom-color:#e1e1e1; border-bottom-width:1upx; border-bottom-style:solid; border-radius:0upx;font-size:8upx;}
+ .my_1 .my_2 .my_36 .my_41 .my_42{white-space:normal;width:47upx;height:45upx;padding:0upx;margin-top:13upx;margin-left:2upx;float:left; border-radius:0upx;font-size:44upx; line-height:45upx;}
+ .my_1 .my_2 .my_36 .my_41 .my_43{white-space:normal;width:426upx;height:47upx;padding:0upx;margin-top:13upx;margin-left:18upx;float:left; border-radius:0upx; color:#646464;font-size:32upx; line-height:47upx;}
+ .my_1 .my_2 .my_36 .my_41 .my_44{white-space:normal;width:30upx;height:32upx;padding:0upx;margin-top:20upx;margin-left:113upx;float:left; border-radius:0upx;font-size:31upx; line-height:32upx;}
+ .my_1 .my_2 .my_36 .my_45{white-space:normal;width:651upx;height:95upx;padding:0upx;clear:both;margin-top:20upx;margin-left:38upx;float:left; border-radius:0upx;font-size:8upx;}
+ .my_1 .my_2 .my_36 .my_45 .my_46{white-space:normal;width:47upx;height:45upx;padding:0upx;margin-top:13upx;margin-left:2upx;float:left; border-radius:0upx;font-size:44upx; line-height:45upx;}
+ .my_1 .my_2 .my_36 .my_45 .my_47{white-space:normal;width:426upx;height:47upx;padding:0upx;margin-top:13upx;margin-left:18upx;float:left; border-radius:0upx; color:#646464;font-size:32upx; line-height:47upx;}
+ .my_1 .my_2 .my_36 .my_45 .my_48{white-space:normal;width:30upx;height:32upx;padding:0upx;margin-top:20upx;margin-left:113upx;float:left; border-radius:0upx;font-size:31upx; line-height:32upx;}
+ .my_1 .my_2 .my_49{white-space:normal;width:702upx;height:502upx;padding:0upx;clear:both;margin-top:22upx;margin-left:23upx;float:left;background-color:#ffffff; border-radius:0upx;font-size:8upx;}
+ .my_1 .my_2 .my_49 .my_50{white-space:normal;width:651upx;height:95upx;padding:0upx;clear:both;margin-top:43upx;margin-left:38upx;float:left; border-bottom-color:#e1e1e1; border-bottom-width:1upx; border-bottom-style:solid; border-radius:0upx;font-size:8upx;}
+ .my_1 .my_2 .my_49 .my_50 .my_51{white-space:normal;width:47upx;height:45upx;padding:0upx;margin-top:13upx;margin-left:2upx;float:left; border-radius:0upx;font-size:44upx; line-height:45upx;}
+ .my_1 .my_2 .my_49 .my_50 .my_52{white-space:normal;width:426upx;height:47upx;padding:0upx;margin-top:13upx;margin-left:18upx;float:left; border-radius:0upx; color:#646464;font-size:32upx; line-height:47upx;}
+ .my_1 .my_2 .my_49 .my_50 .my_53{white-space:normal;width:30upx;height:32upx;padding:0upx;margin-top:20upx;margin-left:113upx;float:left; border-radius:0upx;font-size:31upx; line-height:32upx;}
+ .my_1 .my_2 .my_49 .my_54{white-space:normal;width:651upx;height:95upx;padding:0upx;clear:both;margin-top:22upx;margin-left:38upx;float:left; border-bottom-color:#e1e1e1; border-bottom-width:1upx; border-bottom-style:solid; border-radius:0upx;font-size:8upx;}
+ .my_1 .my_2 .my_49 .my_54 .my_55{white-space:normal;width:47upx;height:45upx;padding:0upx;margin-top:13upx;margin-left:2upx;float:left; border-radius:0upx;font-size:44upx; line-height:45upx;}
+ .my_1 .my_2 .my_49 .my_54 .my_56{white-space:normal;width:426upx;height:47upx;padding:0upx;margin-top:13upx;margin-left:18upx;float:left; border-radius:0upx; color:#646464;font-size:32upx; line-height:47upx;}
+ .my_1 .my_2 .my_49 .my_54 .my_57{white-space:normal;width:30upx;height:32upx;padding:0upx;margin-top:20upx;margin-left:113upx;float:left; border-radius:0upx;font-size:31upx; line-height:32upx;}
+ .my_1 .my_2 .my_49 .my_58{white-space:normal;width:651upx;height:95upx;padding:0upx;clear:both;margin-top:20upx;margin-left:38upx;float:left; border-bottom-color:#e1e1e1; border-bottom-width:1upx; border-bottom-style:solid; border-radius:0upx;font-size:8upx;}
+ .my_1 .my_2 .my_49 .my_58 .my_59{white-space:normal;width:47upx;height:45upx;padding:0upx;margin-top:13upx;margin-left:2upx;float:left; border-radius:0upx;font-size:44upx; line-height:45upx;}
+ .my_1 .my_2 .my_49 .my_58 .my_60{white-space:normal;width:426upx;height:47upx;padding:0upx;margin-top:13upx;margin-left:18upx;float:left; border-radius:0upx; color:#646464;font-size:32upx; line-height:47upx;}
+ .my_1 .my_2 .my_49 .my_58 .my_61{white-space:normal;width:30upx;height:32upx;padding:0upx;margin-top:20upx;margin-left:113upx;float:left; border-radius:0upx;font-size:31upx; line-height:32upx;}
+ .my_1 .my_2 .my_49 .my_62{white-space:normal;width:651upx;height:95upx;padding:0upx;clear:both;margin-top:22upx;margin-left:38upx;float:left; border-radius:0upx;font-size:8upx;}
+ .my_1 .my_2 .my_49 .my_62 .my_63{white-space:normal;width:47upx;height:45upx;padding:0upx;margin-top:13upx;margin-left:2upx;float:left; border-radius:0upx;font-size:44upx; line-height:45upx;}
+ .my_1 .my_2 .my_49 .my_62 .my_64{white-space:normal;width:426upx;height:47upx;padding:0upx;margin-top:13upx;margin-left:18upx;float:left; border-radius:0upx; color:#646464;font-size:31upx; line-height:47upx;}
+ .my_1 .my_2 .my_49 .my_62 .my_65{white-space:normal;width:30upx;height:32upx;padding:0upx;margin-top:20upx;margin-left:113upx;float:left; border-radius:0upx;font-size:31upx; line-height:32upx;}

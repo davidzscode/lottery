@@ -1,0 +1,61 @@
+.cl-scroller__wrap {
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+}
+
+.cl-scroller {
+	height: 100%;
+
+	&__loading {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		bottom: 100%;
+		min-height: 100rpx;
+
+		.cl-loading {
+			position: relative;
+			/* #ifdef MP-WEIXIN */
+			top: 6rpx;
+			/* #endif */
+		}
+	}
+
+	&__view {
+		height: 100%;
+	}
+
+	&__back-top {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		right: 30rpx;
+		bottom: 100rpx;
+		background-color: rgba(255, 255, 255, 0.8);
+		border: 1rpx solid #ddd;
+		height: 80rpx;
+		width: 80rpx;
+		border-radius: 80rpx;
+		transform: translateX(160rpx);
+		transition: all 0.3s;
+		opacity: 0;
+		z-index: 99;
+
+		&.fadeIn {
+			transform: translateX(0);
+			opacity: 1;
+		}
+
+		&-text {
+			font-size: 20rpx;
+			color: #444;
+			margin-top: -4rpx;
+		}
+	}
+}

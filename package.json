@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "@dcloudio/uni-ui": "^1.4.23",
+    "ajax": "^2.4.5",
+    "cl-uni": "^1.8.20",
+    "jquery": "^3.7.1",
+    "uni-read-pages": "^1.0.5",
+    "uni-simple-router": "^2.0.7",
+    "uview-ui": "^2.0.35"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.22.15",
+    "sass-resources-loader": "^2.2.5"
+  }
+}

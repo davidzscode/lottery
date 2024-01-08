@@ -1,0 +1,32 @@
+.cl-sticky {
+	/* #ifndef APP-PLUS-NVUE */
+	position: -webkit-sticky;
+	/* #endif */
+	position: sticky;
+
+	/* #ifdef H5 */
+	top: 44px;
+	/* #endif */
+
+	/* #ifndef H5 */
+	top: 0;
+	/* #endif */
+
+	z-index: 99;
+	width: 100%;
+
+	&.is-flex {
+		display: flex;
+		align-items: center;
+	}
+
+	&.is-topbar {
+		/* #ifdef H5 */
+		top: 0;
+		/* #endif */
+	}
+
+	&.is-white {
+		background-color: #fff;
+	}
+}

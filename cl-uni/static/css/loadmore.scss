@@ -1,0 +1,19 @@
+.cl-loadmore__wrap {
+	.cl-loadmore {
+		display: flex;
+		align-items: center;
+
+		&__text {
+			font-size: 26rpx;
+			color: #666;
+			margin-left: 14rpx;
+		}
+
+		.cl-loading {
+			position: relative;
+			/* #ifdef MP-WEIXIN */
+			top: 4rpx;
+			/* #endif */
+		}
+	}
+}

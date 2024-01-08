@@ -1,0 +1,389 @@
+{
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"cl-(.*)": "cl-uni/components/cl-$1/cl-$1.vue",
+			//引入uview-ui
+			"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue",
+			// uni-ui 规则如下配置
+			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+		}
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/user/login",
+			"style": {}
+		}, {
+			"path": "pages/user/register",
+			"style": {}
+		}, {
+			"path": "pages/user/recover",
+			"style": {}
+		}, {
+			"path": "pages/home/home",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "pages/personal/real",
+			"style": {}
+		}, {
+			"path": "pages/personal/personal",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "pages/pay/wallet",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "pages/personal/means",
+			"style": {}
+		}, {
+			"path": "pages/pay/pay",
+			"style": {}
+		}, {
+			"path": "pages/personal/set",
+			"style": {}
+		}, {
+			"path": "pages/personal/changePwd",
+			"style": {}
+		}, {
+			"path": "pages/personal/personalSettings",
+			"style": {}
+		}, {
+			"path": "pages/pay/earnings",
+			"style": {}
+		}, {
+			"path": "pages/football/football",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "pages/pay/withdrawalRecord",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "pages/pailie/pailie3",
+			"style": {}
+		}, {
+			"path": "pages/pailie/openPrize",
+			"style": {}
+		}, {
+			"path": "pages/pailie/buyShoppingCar",
+			"style": {}
+		}, {
+			"path": "pages/score/score",
+			"style": {}
+		}, {
+			"path": "pages/basketball/basketball",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "pages/order/lotteryOrder",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "pages/order/lotteryOrderDetails",
+			"style": {}
+		}, {
+			"path": "pages/personal/share",
+			"style": {}
+		}, {
+			"path": "pages/personal/share1",
+			"style": {}
+		}, {
+			"path": "pages/personal/download",
+			"style": {}
+		}, {
+			"path": "pages/documentary/documentary",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "pages/common/analysis",
+			"style": {}
+		}, {
+			"path": "pages/football/footballConfirm",
+			"style": {}
+		}, {
+			"path": "pages/basketball/basketballConfirm",
+			"style": {}
+		}, {
+			"path": "pages/beidan/beidan",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "pages/beidan/beidanConfirm",
+			"style": {}
+		}, {
+			"path": "pages/documentary/place",
+			"style": {}
+		}, {
+			"path": "pages/documentary/search",
+			"style": {}
+		}, {
+			"path": "pages/documentary/homePage",
+			"style": {}
+		}, {
+			"path": "pages/common/optimization",
+			"style": {}
+		}, {
+			"path": "pages/documentary/documentaryInfo",
+			"style": {}
+		}, {
+			"path": "pages/personal/follow",
+			"style": {}
+		}, {
+			"path": "pages/common/rule",
+			"style": {}
+		}, {
+			"path": "pages/beidan/beidanResult",
+			"style": {}
+		}, {
+			"path": "pages/football/footballResult",
+			"style": {}
+		}, {
+			"path": "pages/basketball/basketballResult",
+			"style": {}
+		}, {
+			"path": "pages/proxy/proxy",
+			"style": {}
+		}, {
+			"path": "pages/proxy/log",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "pages/proxy/invitation",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "pages/pailie5/pailie5",
+			"style": {}
+		}, {
+			"path": "pages/pailie5/openPrize",
+			"style": {}
+		}, {
+			"path": "pages/pailie5/buyShoppingCar",
+			"style": {}
+		}, {
+			"path": "pages/qxc/qxc",
+			"style": {}
+		}, {
+			"path": "pages/qxc/openPrize",
+			"style": {}
+		}, {
+			"path": "pages/qxc/buyShoppingCar",
+			"style": {}
+		}, {
+			"path": "pages/personal/introduce",
+			"style": {}
+		}, {
+			"path": "pages/kaijiang/kaijiang",
+			"style": {}
+		}, {
+			"path": "pages/kaijiang/events",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "pages/kaijiang/eventDetail",
+			"style": {}
+		}, {
+			"path": "pages/winburden/winburden",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "pages/winburden/winburdenConfirm",
+			"style": {}
+		}, {
+			"path": "pages/winburden/winburdenResult",
+			"style": {}
+		}, {
+			"path": "pages/victorydefeat/victorydefeat",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "pages/victorydefeat/victorydefeatConfirm",
+			"style": {}
+		}, {
+			"path": "pages/victorydefeat/victorydefeatResult",
+			"style": {}
+		}, {
+			"path": "pages/dlt/dlt",
+			"style": {}
+		}, {
+			"path": "pages/dlt/openPrize",
+			"style": {}
+		}, {
+			"path": "pages/dlt/buyShoppingCar",
+			"style": {}
+		}, {
+			"path": "uni_modules/uni-upgrade-center-app/pages/upgrade-popup",
+			"style": {
+				"disableScroll": true,
+				"app-plus": {
+					"backgroundColorTop": "transparent",
+					"background": "transparent",
+					"titleNView": false,
+					"scrollIndicator": false,
+					"popGesture": "none",
+					"animationType": "fade-in",
+					"animationDuration": 200
+				}
+			}
+		}, {
+			"path": "pages/article/article",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/article/RecommendOrder",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/home/showShop",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/pay/transfer",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/order/orderSuccess",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"popGesture": "none"
+				}
+			}
+
+		}, {
+			"path": "pages/personal/join",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/personal/hongbaoList",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/article/article1",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/documentary/documentaryhelp",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/kaijiang/eventDetailBasketball",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "uni_modules/uni-upgrade-center-app/pages/upgrade-popup",
+			"style": {
+				"disableScroll": true,
+				"app-plus": {
+					"backgroundColorTop": "transparent",
+					"background": "transparent",
+					"titleNView": false,
+					"scrollIndicator": false,
+					"popGesture": "none",
+					"animationType": "fade-in",
+					"animationDuration": 200
+				}
+			}
+		}
+	],
+
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#9A3B86",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/home/home",
+				"iconPath": "static/tabbar/home.png",
+				"selectedIconPath": "static/tabbar/home-active.png",
+				"text": "首页"
+			}, {
+				"pagePath": "pages/kaijiang/events",
+				"iconPath": "static/tabbar/kaijiang.png",
+				"selectedIconPath": "static/tabbar/kaijiang-active.png",
+				"text": "实况"
+			}, {
+				"pagePath": "pages/documentary/documentary",
+				"iconPath": "static/tabbar/documentary.png",
+				"selectedIconPath": "static/tabbar/documentary-active.png",
+				"text": "跟单"
+			}, {
+				"pagePath": "pages/personal/personal",
+				"iconPath": "static/tabbar/user1.png",
+				"selectedIconPath": "static/tabbar/user-active.png",
+				"text": "我的"
+			}
+
+		]
+	},
+
+
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationStyle": "custom",
+		"navigationBarBackgroundColor": "#9A3B86",
+		"backgroundColor": "#9A3B86",
+		"backgroundColorTop": "#9A3B86",
+		"h5": {
+			"titleNView": {
+				"backgroundColor": "#9A3B86"
+			},
+			"pullToRefresh": {
+				"color": "#9A3B86",
+				"offset": "44"
+			}
+		}
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	}
+}
